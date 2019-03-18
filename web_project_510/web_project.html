@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>SAVE TREES</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<header>
+<div>
+<h4>
+<div class="container">
+<a href="mycart.html"><img  style="float:right;margin-top:-22px"src="cart2changes.png" alt="" height="30px" width="150px"><br><br>
+<div class="topnav">
+<a id="a1" href="tree.html">TREES</a></a>
+<a id="a2" href="file:///C:/Users/LENOVO/Desktop/web_project/hedges.html" style="padding-left:25px">HEDGES</a>
+<a id="a3" href="C:/Users/LENOVO/Desktop/web_project/shrubs.html" style="padding-left:25px">SHRUBS</a>
+<a id="a4" href="file:///C:/Users/LENOVO/Desktop/web_project/vines1.html" style="padding-left:25px">VINES</a>
+<a id="a5" href="file:///C:/Users/LENOVO/Desktop/web_project/groundcover.html" style="padding-left:25px">GROUND COVER</a>
+<a id="a6" href="file:///C:/Users/LENOVO/Desktop/web_project/prennials1.html" style="padding-left:25px">PERENNIALS</a>
+<a id="a7" href="file:///C:/Users/LENOVO/Desktop/web_project/plantfoods.html" style="padding-left:25px">PLANT FOODS</a>
+</div>
+</div>
+</h4>
+<div>
+<img class="mySlides" src="plant8.jpg" alt="Image not found"  width="100%" height="100%" >
+<img class="mySlides" src="plant13.jpg" alt="Image not found"  width="100%" height="100%">
+<img class="mySlides" src="plant12.jpg" alt="Image not found"  width="100%" height="100%">
+<img class="mySlides" src="plant11.jpg" alt="Image not found"  width="100%" height="100%">
+<img class="mySlides" src="plant16.jpg" alt="Image not found"  width="100%" height="100%">
+</div>
+</div>
+</header>
+<footer>
+<div class="footer">
+<b><a  id="p" href="about.html" style="font-size:18px">ABOUT</a></b>
+<b><a  id="p1" href="contact%20us.html" style="padding-left:20px;font-size:18px">CONTACT</a></b>
+<b><a  id="p2" style="padding-left:20px;font-size:18px" href="myaccount.html"> MY ACCOUNT</a></b>
+<b><a  id="p3" href="planting%20tips.html" style="padding-left:20px;font-size:18px">PLANTING TIPS</a></b>
+<b><a  id="p4" href="privacy%20policy.html" style="padding-left:20px;font-size:18px">PRIVACY POLICY</a></b>
+<i style="padding-left:30px">&copy; Copyright 2019 PlantPlan.com</i>
+<div class="img">
+<img src="img.png" alt="image not found" width="250px" height="200px">
+</div>
+</div>
+</footer>
+
+<script>
+var myindex=0;
+cal();
+function cal()
+{
+var i;
+var x=document.getElementsByClassName("mySlides");
+for(i=0;i<x.length;i++)
+{
+x[i].style.display="none";
+}
+myindex++;
+if(myindex >x.length)
+{
+myindex=1
+}
+x[myindex-1].style.display="block";
+setTimeout(cal,3000);
+}
+</script>
+</div>
+</body>
+</html>
